@@ -37,6 +37,7 @@ const Curatings = async ({ styleId, searchParams }: CuratingsProps) => {
           curatings={curatings}
           currentPage={currentPage}
           totalPages={totalPages}
+          styleId={styleId}
         />
       )}
     />
