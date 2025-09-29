@@ -5,7 +5,7 @@ import { CommentDeleteFormInput } from '@services/types'
 import { revalidateTag } from 'next/cache'
 
 const deleteComment = async (
-  commentId: number,
+  commentId: string,
   body: CommentDeleteFormInput,
 ) => {
   const response = await deleteCommentApi(commentId, body)
