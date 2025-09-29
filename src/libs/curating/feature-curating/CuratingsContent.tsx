@@ -13,9 +13,10 @@ type CuratingsContentProps = {
   curatings: CuratingType[]
   currentPage: number
   totalPages: number
+  styleId: string
 }
 
-const CuratingsContent = ({ curatings, currentPage, totalPages }: CuratingsContentProps) => {
+const CuratingsContent = ({ curatings, currentPage, totalPages, styleId }: CuratingsContentProps) => {
   const curatingsLength = curatings?.length ?? 0;
 
   return (
@@ -24,7 +25,7 @@ const CuratingsContent = ({ curatings, currentPage, totalPages }: CuratingsConte
         <Divider marginBlock='0' color='black' />
         {curatings?.map((curating, idx) => (
           <Fragment key={curating.id}>
-            <Curating curating={curating} />
+            <Curating curating={curating} styleId={styleId}/>
             {(idx + 1 < curatingsLength) && <Divider marginBlock='0' color='gray' />}
           </Fragment>
         ))}
