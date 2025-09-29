@@ -4,7 +4,7 @@ import { postComment as postCommentApi } from '@services/api'
 import { CommentFormInput } from '@services/types'
 import { revalidateTag } from 'next/cache'
 
-const postComment = async (curationId: number, body: CommentFormInput) => {
+const postComment = async (curationId: string, body: CommentFormInput) => {
   const response = await postCommentApi(curationId, body)
   revalidateTag('curatings')
   return response

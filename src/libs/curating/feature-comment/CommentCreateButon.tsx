@@ -8,7 +8,7 @@ import useConfirmModal from '@libs/shared/modal/useConfirmModal'
 import postComment from '../data-access-comment/postComment'
 
 type CommentCreateButtonProps = {
-  curatingId: number
+  curatingId: string
 }
 
 const CommentCreateButton = ({ curatingId }: CommentCreateButtonProps) => {

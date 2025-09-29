@@ -21,7 +21,7 @@ export const generatePaginationSchema = <T extends Struct<any, any>>(dataSchema:
 
 // style - data
 export const GalleryStyleSchema = type({
-  id: number(),
+  id: string(),
   thumbnail: string(),
   tags: array(string()),
   title: string(),
