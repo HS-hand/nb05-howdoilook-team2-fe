@@ -23,6 +23,10 @@ module.exports = {
         protocol: 'http',
         hostname: 'example.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'nb05-howdoilook-team2-1.onrender.com'
+      }
     ],
   },
 }
